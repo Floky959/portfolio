@@ -141,7 +141,14 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 opacity-90"></div>
+        <!-- Background Video -->
+                <video autoplay muted loop playsinline
+                       class="absolute inset-0 w-full h-full object-cover">
+                    <source src="src/assets/bgheropage.mp4" type="video/mp4">
+                </video>
+                <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>
+
             <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
                 <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                     <!-- Text Content -->
@@ -153,7 +160,7 @@
                             <h2 class="hero-subtitle text-xl sm:text-2xl lg:text-3xl text-gray-300 font-light">
                                 Full Stack Developer
                             </h2>
-                            <p class="hero-description text-base sm:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0">
+                            <p class="hero-description text-base sm:text-lg text-white max-w-2xl mx-auto lg:mx-0">
                                 I craft digital experiences that blend functionality with beautiful design. 
                                 Specializing in web development, UI/UX design.
                             </p>
@@ -164,7 +171,11 @@
                             <a href="#portfolio" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
                                 View My Work
                             </a>
-                            <a href="src/assets/Ayoub Moufak CV.pdf" download="Ayoub Moufak CV.pdf" class="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-center">
+                            <a href="src/assets/Ayoub Moufak CV.pdf" download class="relative overflow-hidden border border-white/40 text-white bg-white/10 backdrop-blur-md hover:bg-white hover:text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold
+                                    transition-all duration-300
+                                    transform hover:scale-105
+                                    shadow-[0_0_20px_rgba(255,255,255,0.25)]
+                                    text-center">
                                 Download CV
                             </a>
                         </div>
