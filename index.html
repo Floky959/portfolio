@@ -563,9 +563,9 @@
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project 1 - ARTISET -->
-            <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-xl cursor-pointer" onclick="openModal('kronos')">
+            <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-xl cursor-pointer" onclick="openModal('artiset')">
                 <div class="relative overflow-hidden group">
-                    <img src="src/assets/ArtisetLogo.png" alt="KRONOS E-Commerce" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <img src="src/assets/ArtisetLogo.png" alt="artiset" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-4 left-4 right-4 text-white">
                             <h3 class="text-xl font-bold mb-2">ARTISET digital Agency</h3>
@@ -715,44 +715,44 @@
 
    <!-- Project Modals -->
 <!-- Artiset Modal -->
-<div id="kronos-modal" class="fixed inset-0 bg-black bg-opacity-50 modal-backdrop hidden z-50 flex items-center justify-center p-4">
+<div id="artiset-modal" class="fixed inset-0 bg-black bg-opacity-50 modal-backdrop hidden z-50 flex items-center justify-center p-4">
     <div class="bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto animate-scale-in">
         <div class="relative">
-            <button onclick="closeModal('kronos')" class="absolute top-4 right-4 z-10 bg-gray-800 hover:bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center text-white">
+            <button onclick="closeModal('artiset')" class="absolute top-4 right-4 z-10 bg-gray-800 hover:bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center text-white">
                 <i class="fas fa-times"></i>
             </button>
             
             <!-- Carousel for Artiset -->
             <div class="relative h-64 md:h-80 overflow-hidden rounded-t-2xl">
-                <div class="carousel-container" id="kronos-carousel">
+                <div class="carousel-container" id="artiset-carousel">
                     <div class="carousel-slide active">
-                        <img src="src/assets/artisetscreen1.PNG" alt="KRONOS" class="w-full h-full object-cover">
+                        <img src="src/assets/artisetscreen1.PNG" alt="artiset" class="w-full h-full object-cover">
                     </div>
                     <div class="carousel-slide">
-                        <img src="src/assets/artisetscreen2.PNG" alt="KRONOS" class="w-full h-full object-cover">
+                        <img src="src/assets/artisetscreen2.PNG" alt="artiset" class="w-full h-full object-cover">
                     </div>
                     <div class="carousel-slide">
-                        <img src="src/assets/artisetscreen3.PNG" alt="KRONOS" class="w-full h-full object-cover">
+                        <img src="src/assets/artisetscreen3.PNG" alt="artiset" class="w-full h-full object-cover">
                     </div>
                     <div class="carousel-slide">
-                        <img src="src/assets/artisetscreen4.PNG" alt="KRONOS" class="w-full h-full object-cover">
+                        <img src="src/assets/artisetscreen4.PNG" alt="artiset" class="w-full h-full object-cover">
                     </div>
                 </div>
                 
                 <!-- Carousel Controls -->
-                <button class="carousel-btn carousel-prev" onclick="prevSlide('kronos-carousel')">
+                <button class="carousel-btn carousel-prev" onclick="prevSlide('artiset-carousel')">
                     <i class="fas fa-chevron-left"></i>
                 </button>
-                <button class="carousel-btn carousel-next" onclick="nextSlide('kronos-carousel')">
+                <button class="carousel-btn carousel-next" onclick="nextSlide('artiset-carousel')">
                     <i class="fas fa-chevron-right"></i>
                 </button>
                 
                 <!-- Carousel Indicators -->
                 <div class="carousel-indicators">
-                    <span class="indicator active" onclick="currentSlide('kronos-carousel', 1)"></span>
-                    <span class="indicator" onclick="currentSlide('kronos-carousel', 2)"></span>
-                    <span class="indicator" onclick="currentSlide('kronos-carousel', 3)"></span>
-                    <span class="indicator" onclick="currentSlide('kronos-carousel', 4)"></span>
+                    <span class="indicator active" onclick="currentSlide('artiset-carousel', 1)"></span>
+                    <span class="indicator" onclick="currentSlide('artiset-carousel', 2)"></span>
+                    <span class="indicator" onclick="currentSlide('artiset-carousel', 3)"></span>
+                    <span class="indicator" onclick="currentSlide('artiset-carousel', 4)"></span>
                 </div>
             </div>
             
@@ -778,19 +778,17 @@
                     <div>
                         <h3 class="text-xl font-semibold text-purple-400 mb-3">Technologies Used</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">React.js</span>
-                            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm">Node.js</span>
-                            <span class="bg-green-700 text-white px-3 py-1 rounded-full text-sm">Express.js</span>
-                            <span class="bg-green-800 text-white px-3 py-1 rounded-full text-sm">MongoDB</span>
-                            <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm">Stripe</span>
+                            <span class="bg-orange-600 text-white px-3 py-1 rounded-full text-sm">HTML5</span>
+                            <span class="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">CSS3</span>
+                            <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm">Bootstrap</span>
                             <span class="bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-                            <span class="bg-orange-600 text-white px-3 py-1 rounded-full text-sm">JWT</span>
-                        </div>
+                         </div>
                     </div>
                 </div>
                 
                 <div class="flex gap-4">
-                    <a href="https://mohamedmaamar.me/kronos" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2">
+                    <a href="https://ayoubmoufak.dev/artiset" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2">
                         <i class="fas fa-external-link-alt"></i> View Live Demo
                     </a>
                     <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2">
@@ -1561,7 +1559,7 @@
         
         // Preload carousel images for better performance
         const preloadImages = [
-            'src/assets/kronos1.png', 'src/assets/kronos2.png', 'src/assets/kronos3.png', 'src/assets/kronos4.png',
+            'src/assets/artisetscreen1.png', 'src/assets/artisetscreen2.png', 'src/assets/artisetscreen3.png', 'src/assets/artisetscreen4.png',
             'src/assets/goldenhome1.png', 'src/assets/goldenhome2.png', 'src/assets/goldenhome3.png', 'src/assets/goldenhome4.png',
             'src/assets/mawaqit1.png', 'src/assets/mawaqit2.png', 'src/assets/mawaqit3.png', 'src/assets/mawaqit4.png',
             'src/assets/fitflex1.png', 'src/assets/fitflex2.png', 'src/assets/fitflex3.png', 'src/assets/fitflex4.png'
@@ -1607,7 +1605,7 @@
 
     // Initialize touch support for all carousels
     document.addEventListener('DOMContentLoaded', function() {
-        const carouselIds = ['kronos-carousel', 'goldenhome-carousel', 'mawaqit-carousel', 'weather-carousel', 'fitflex-carousel', 'movies-carousel'];
+        const carouselIds = ['artiset-carousel', 'goldenhome-carousel', 'mawaqit-carousel', 'weather-carousel', 'fitflex-carousel', 'movies-carousel'];
         carouselIds.forEach(id => {
             handleTouch(id);
         });
